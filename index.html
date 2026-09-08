@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Andino Villa Carlos Paz | Trekking, escalada y refugios en Los Gigantes</title>
+  <meta name="description" content="Club de montaña de Villa Carlos Paz desde 1985. Trekking, escalada, montañismo y dos refugios propios en el macizo de Los Gigantes. Asociate y sumate a la comunidad.">
+
+  <!-- TODO: reemplazar por el dominio real cuando esté comprado -->
+  <link rel="canonical" href="https://clubandinovcp.org.ar/">
+  <meta property="og:title" content="Club Andino Villa Carlos Paz">
+  <meta property="og:description" content="Club de montaña desde 1985. Trekking, escalada y dos refugios propios en Los Gigantes.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://clubandinovcp.org.ar/">
+  <!-- TODO: subir una imagen de portada de 1200x630 y enlazarla acá -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#contenido">Ir al contenido</a>
+
+  <!-- ================================================================
+       PATRÓN DE MONTAÑAS
+       Recreación vectorial del estampado del club. Se define una sola
+       vez acá y se reutiliza con <use> en el hero, el CTA y el footer.
+       Para editarlo, cambiar los polígonos de abajo.
+       ================================================================ -->
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+    <symbol id="patron-montanas" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+      <rect width="1600" height="900" fill="#0090D9"/>
+      <polygon fill="#0B3B8C" points="0.0,300.0 177.8,145.1 355.6,124.0 533.3,283.8 711.1,163.4 888.9,90.2 1066.7,346.2 1244.4,101.8 1422.2,149.6 1600.0,300.0 1600.0,900.0 0.0,900.0"/>
+      <polygon fill="#0E1D38" points="0.0,410.0 266.7,196.4 533.3,251.4 800.0,364.3 1066.7,196.8 1333.3,206.6 1600.0,410.0 1600.0,900.0 0.0,900.0"/>
+      <polygon fill="#E5D8BE" points="0.0,410.0 266.7,196.4 533.3,251.4 800.0,364.3 1066.7,196.8 1333.3,206.6 1600.0,410.0 1600.0,410.0 1333.3,232.3 1066.7,223.4 800.0,375.6 533.3,272.6 266.7,222.1 0.0,410.0"/>
+      <polygon fill="#0090D9" points="0.0,520.0 133.3,412.4 266.7,371.6 400.0,470.5 533.3,381.2 666.7,352.2 800.0,502.0 933.3,371.8 1066.7,362.9 1200.0,470.9 1333.3,383.3 1466.7,383.1 1600.0,520.0 1600.0,900.0 0.0,900.0"/>
+      <polygon fill="#E0B400" points="1200.0,470.9 1333.3,383.3 1466.7,383.1 1600.0,520.0 1600.0,536.0 1466.7,399.1 1333.3,399.3 1200.0,486.9"/>
+      <polygon fill="#0E1D38" points="0.0,640.0 266.7,428.3 533.3,479.8 800.0,592.6 1066.7,424.9 1333.3,437.6 1600.0,640.0 1600.0,900.0 0.0,900.0"/>
+      <polygon fill="#E5D8BE" points="0.0,640.0 266.7,428.3 533.3,479.8 800.0,592.6 1066.7,424.9 1333.3,437.6 1600.0,640.0 1600.0,640.0 1333.3,459.6 1066.7,446.9 800.0,601.9 533.3,498.4 266.7,450.3 0.0,640.0"/>
+      <polygon fill="#0B3B8C" points="0.0,760.0 266.7,655.5 533.3,614.6 800.0,741.1 1066.7,613.2 1333.3,626.3 1600.0,760.0 1600.0,900.0 0.0,900.0"/>
+      <polygon fill="#0E1D38" points="0.0,880.0 133.3,772.6 266.7,731.3 400.0,830.1 533.3,741.7 666.7,712.4 800.0,861.6 933.3,731.6 1066.7,723.3 1200.0,830.7 1333.3,743.6 1466.7,743.0 1600.0,880.0 1600.0,900.0 0.0,900.0"/>
+      <polygon fill="#E5D8BE" points="0.0,880.0 133.3,772.6 266.7,731.3 400.0,830.1 533.3,741.7 666.7,712.4 800.0,861.6 933.3,731.6 1066.7,723.3 1200.0,830.7 1333.3,743.6 1466.7,743.0 1600.0,880.0 1600.0,880.0 1466.7,757.4 1333.3,758.0 1200.0,844.6 1066.7,738.2 933.3,746.5 800.0,867.5 666.7,727.6 533.3,756.6 400.0,838.6 266.7,746.2 133.3,787.5 0.0,880.0"/>
+    </symbol>
+  </svg>
+
+  <!-- ================================================================
+       HEADER
+       ================================================================ -->
+  <header class="cabecera" id="inicio">
+    <div class="marco cabecera__fila">
+
+      <a href="#inicio" class="marca">
+        <!-- Isotipo simplificado. TODO: reemplazar por el logo oficial en SVG. -->
+        <svg class="marca__iso" viewBox="0 0 40 36" aria-hidden="true">
+          <path d="M20 2 L38 34 H2 Z" fill="#0B3B8C"/>
+          <path d="M20 12 L30 30 H10 Z" fill="#E5D8BE"/>
+          <circle cx="20" cy="10" r="4" fill="#E0B400"/>
+        </svg>
+        <span class="marca__texto">Club Andino <b>VCP</b></span>
+      </a>
+
+      <nav class="nav-escritorio" aria-label="Navegación principal">
+        <a href="#actividades">Actividades</a>
+        <a href="#refugios">Refugios</a>
+        <a href="#escuelas">Escuelas</a>
+        <a href="#montana">La montaña</a>
+      </nav>
+
+      <a class="boton boton--acento boton--cabecera"
+         href="#asociarse">Asociate</a>
+
+      <button class="hamburguesa" id="btn-menu" aria-label="Abrir menú"
+              aria-expanded="false" aria-controls="menu-movil">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+
+    <nav class="menu-movil" id="menu-movil" aria-label="Navegación móvil" hidden>
+      <div class="marco menu-movil__inner">
+        <a href="#actividades">Actividades</a>
+        <a href="#refugios">Refugios</a>
+        <a href="#escuelas">Escuelas</a>
+        <a href="#montana">La montaña</a>
+        <a href="#salidas">Próximas salidas</a>
+        <a href="#faq">Preguntas</a>
+        <a class="boton boton--acento boton--bloque" href="#asociarse">Asociate</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ================================================================
+         1. HERO
+         ================================================================ -->
+    <section class="hero">
+      <svg class="hero__patron" aria-hidden="true" focusable="false">
+        <use href="#patron-montanas"/>
+      </svg>
+      <div class="hero__velo" aria-hidden="true"></div>
+
+      <div class="marco hero__inner">
+        <p class="kicker kicker--claro">Villa Carlos Paz · Córdoba · desde 1985</p>
+        <h1>La montaña se aprende en comunidad</h1>
+        <p class="hero__bajada">
+          Somos un club de montaña con cuarenta años en Villa Carlos Paz.
+          Trekking, escalada, montañismo y bicicleta, con dos refugios propios
+          en el macizo de Los Gigantes.
+        </p>
+        <div class="hero__acciones">
+          <a class="boton boton--acento boton--grande" href="#asociarse">Quiero asociarme</a>
+          <a class="boton boton--claro boton--grande" href="#refugios">Conocer los refugios</a>
+        </div>
+
+        <ul class="hero__datos">
+          <li><b>1985</b><span>Año de fundación</span></li>
+          <li><b>2</b><span>Refugios propios</span></li>
+          <li><b>4</b><span>Disciplinas</span></li>
+          <li><b>Los Gigantes</b><span>Nuestro macizo</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         2. QUIÉNES SOMOS
+         ================================================================ -->
+    <section class="seccion" id="nosotros">
+      <div class="marco">
+        <div class="seccion__cabeza">
+          <p class="kicker">Quiénes somos</p>
+          <h2>Cuarenta años acercando la montaña a Carlos Paz</h2>
+        </div>
+
+        <div class="dos-columnas">
+          <div class="prosa">
+            <!-- TODO: el club tiene que aportar su relato de fundación:
+                 nombres, primeras salidas, cómo se consiguieron los refugios. -->
+            <p>Desde 1985 un grupo de montañistas de Villa Carlos Paz sostiene
+            un club pensado para que la montaña esté al alcance de quien quiera
+            aprender a caminarla, escalarla y cuidarla.</p>
+
+            <p>Hoy el club es una escuela, dos refugios en altura, un calendario
+            de salidas y, sobre todo, una comunidad que transmite el conocimiento
+            de la montaña de una generación a la siguiente.</p>
+
+            <p class="prosa__pendiente">
+              <!-- TODO: reemplazar por un párrafo escrito por el club sobre
+                   sus valores. Es el texto donde más se nota si suena genuino. -->
+              Acá va un cierre en primera persona del club: por qué se sube,
+              por qué se enseña y por qué se cuida lo que se pisa.
+            </p>
+          </div>
+
+          <ul class="valores">
+            <li><h3>Formación y seguridad</h3><p>Se enseña a moverse en montaña con criterio, no por intuición.</p></li>
+            <li><h3>Refugios de montaña</h3><p>Infraestructura propia, construida y sostenida por el club.</p></li>
+            <li><h3>Conservación</h3><p>Cuidar el macizo es parte de la actividad, no un agregado.</p></li>
+            <li><h3>Comunidad</h3><p>Chicos, adultos y familias compartiendo la misma cordada.</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         3. ACTIVIDADES
+         ================================================================ -->
+    <section class="seccion seccion--alt" id="actividades">
+      <div class="marco">
+        <div class="seccion__cabeza">
+          <p class="kicker">Actividades</p>
+          <h2>Encontrá tu puerta de entrada</h2>
+          <p class="seccion__bajada">Distintas disciplinas, distintos niveles. No hace falta experiencia previa para empezar.</p>
+        </div>
+
+        <!-- TODO: confirmar qué actividades siguen activas, días, horarios
+             y referente de cada una antes de publicar. -->
+        <div class="tarjetas tarjetas--4">
+          <article class="tarjeta">
+            <svg class="tarjeta__icono" viewBox="0 0 32 32" aria-hidden="true">
+              <path d="M2 26 L12 8 L18 18 L22 12 L30 26 Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+            </svg>
+            <h3>Trekking y senderismo</h3>
+            <p>Salidas por Los Gigantes y las sierras, de media jornada a fines de semana con campamento.</p>
+            <span class="etiqueta">Todos los niveles</span>
+          </article>
+
+          <article class="tarjeta">
+            <svg class="tarjeta__icono" viewBox="0 0 32 32" aria-hidden="true">
+              <path d="M8 30 V6 a4 4 0 0 1 8 0 v18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+              <circle cx="22" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="2.2"/>
+              <path d="M22 15 v9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+            </svg>
+            <h3>Escalada y palestra</h3>
+            <p>Palestra propia en la sede y salidas a roca. Escalada clásica y deportiva.</p>
+            <span class="etiqueta">Desde cero</span>
+          </article>
+
+          <article class="tarjeta">
+            <svg class="tarjeta__icono" viewBox="0 0 32 32" aria-hidden="true">
+              <path d="M3 28 L14 6 L25 28 Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+              <path d="M10 17 L14 13 L18 17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+            </svg>
+            <h3>Montañismo y técnica</h3>
+            <p>Progresión en terreno agreste, maniobras de seguridad, orientación y autonomía.</p>
+            <span class="etiqueta">Requiere experiencia</span>
+          </article>
+
+          <article class="tarjeta">
+            <svg class="tarjeta__icono" viewBox="0 0 32 32" aria-hidden="true">
+              <circle cx="8" cy="23" r="5.5" fill="none" stroke="currentColor" stroke-width="2.2"/>
+              <circle cx="24" cy="23" r="5.5" fill="none" stroke="currentColor" stroke-width="2.2"/>
+              <path d="M8 23 L14 11 h6 l4 12 M12 11 h6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+            </svg>
+            <h3>Bicicleta de montaña</h3>
+            <p>Salidas por los caminos y senderos del macizo, con distintos grados de dificultad.</p>
+            <span class="etiqueta">Todos los niveles</span>
+          </article>
+        </div>
+
+        <p class="nota-cierre">
+          ¿Buscás otra actividad de montaña?
+          <!-- TODO: reemplazar XXXXXXXXX por el WhatsApp oficial del club -->
+          <a href="https://wa.me/549XXXXXXXXXX?text=Hola,%20quiero%20consultar%20por%20las%20actividades%20del%20club">
+            Consultanos qué estamos dictando esta temporada.</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         4. REFUGIOS  (sección destacada)
+         ================================================================ -->
+    <section class="seccion seccion--oscura" id="refugios">
+      <div class="marco">
+        <div class="seccion__cabeza">
+          <p class="kicker kicker--claro">Refugios</p>
+          <h2>Dos refugios propios en Los Gigantes</h2>
+          <p class="seccion__bajada">No son un alojamiento turístico: son infraestructura de montaña,
+          construida y sostenida por el club para apoyar sus actividades.</p>
+        </div>
+
+        <div class="refugios">
+          <article class="refugio">
+            <h3>Refugio Villa Amelita</h3>
+            <p class="refugio__resumen">El más accesible de los dos. Muy usado por escuelas,
+            grupos y familias que hacen base para recorrer el macizo.</p>
+            <dl class="ficha">
+              <div><dt>Ubicación</dt><dd>La Rotonda, macizo de Los Gigantes</dd></div>
+              <div><dt>Altura</dt><dd>Unos 1.850 m s. n. m.</dd></div>
+              <div><dt>Acceso</dt><dd>En auto, a unos cien metros de La Rotonda</dd></div>
+              <div><dt>Capacidad</dt><dd>Alrededor de 30 plazas en cuchetas triples</dd></div>
+              <div><dt>Servicios</dt><dd>Cocina, comedor y baño</dd></div>
+            </dl>
+          </article>
+
+          <article class="refugio">
+            <h3>Refugio Rafael Juárez</h3>
+            <p class="refugio__resumen">Más chico y más rústico. Se llega solo caminando,
+            así que es la base natural de las salidas largas.</p>
+            <dl class="ficha">
+              <div><dt>Ubicación</dt><dd>Valle de los Refugios, bajo la zona del Mogote</dd></div>
+              <div><dt>Acceso</dt><dd>A pie, unas 2 horas desde La Rotonda o Casas Nuevas</dd></div>
+              <div><dt>Capacidad</dt><dd>Hasta 15 plazas</dd></div>
+              <div><dt>Servicios</dt><dd>Dos ambientes, cocina-comedor y habitación</dd></div>
+            </dl>
+          </article>
+        </div>
+
+        <!-- TODO: falta confirmar tarifa por noche, diferencia socio / no socio,
+             qué hay que llevar y quién toma las reservas. -->
+        <div class="reservas">
+          <div>
+            <h3>Reservas y consultas</h3>
+            <p>La reserva se coordina y se confirma por mensaje. Escribinos con la fecha,
+            la cantidad de personas y el refugio que te interesa.</p>
+          </div>
+          <a class="boton boton--wa boton--grande"
+             href="https://wa.me/549XXXXXXXXXX?text=Hola,%20quiero%20consultar%20por%20un%20refugio">
+            Consultar por un refugio
+          </a>
+        </div>
+
+        <ul class="convivencia">
+          <li>Dejá el refugio como te gustaría encontrarlo.</li>
+          <li>Toda la basura baja con vos.</li>
+          <li>Cuidá el agua: en altura es un recurso escaso.</li>
+          <li>Respetá los horarios de descanso de los demás.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         5. ESCUELAS
+         ================================================================ -->
+    <section class="seccion seccion--alt" id="escuelas">
+      <div class="marco">
+        <div class="seccion__cabeza">
+          <p class="kicker">Escuelas</p>
+          <h2>Aprender con quien ya conoce el terreno</h2>
+        </div>
+
+        <!-- TODO: confirmar edades, días, horarios, arancel y referente de cada escuela. -->
+        <div class="tarjetas tarjetas--3">
+          <article class="tarjeta tarjeta--borde">
+            <h3>Escalada para chicos y chicas</h3>
+            <p>Formación progresiva en la palestra del club. Quienes quieren competir
+            participan del circuito provincial de la Federación Cordobesa de Montañismo y Escalada.</p>
+          </article>
+          <article class="tarjeta tarjeta--borde">
+            <h3>Escalada para adultos</h3>
+            <p>Técnica, maniobras de seguridad y todo lo necesario para salir a la roca
+            de manera autónoma.</p>
+          </article>
+          <article class="tarjeta tarjeta--borde">
+            <h3>Escuela técnica de montaña</h3>
+            <p>Progresión en terreno agreste, orientación, seguridad y autonomía
+            para moverse en alta montaña.</p>
+          </article>
+        </div>
+
+        <div class="destacado">
+          <p><b>Formación reconocida.</b> El club dicta cursos de monitor e instructor de escalada
+          con certificación de la Federación Andinistas Argentinos.</p>
+          <a class="boton boton--acento"
+             href="https://wa.me/549XXXXXXXXXX?text=Hola,%20quiero%20consultar%20por%20una%20escuela">
+            Consultar por una escuela
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         6. LA MONTAÑA QUE CUIDAMOS
+         ================================================================ -->
+    <section class="seccion seccion--azul" id="montana">
+      <div class="marco">
+        <div class="seccion__cabeza">
+          <p class="kicker kicker--claro">La montaña que cuidamos</p>
+          <h2>Subirla es también cuidarla</h2>
+          <!-- TODO: reemplazar por un texto escrito por el club. Preguntar además
+               si participó en gestiones concretas de defensa de áreas protegidas. -->
+          <p class="seccion__bajada">Pasamos los fines de semana en el macizo. Eso nos da
+          una responsabilidad concreta sobre cómo queda cuando nos vamos.</p>
+        </div>
+
+        <div class="dos-columnas">
+          <ul class="practicas">
+            <li>No dejar rastro: todo lo que sube, baja.</li>
+            <li>Bajar la basura propia y la que se encuentre.</li>
+            <li>Cuidar las vertientes y los cursos de agua.</li>
+            <li>Respetar la fauna y la flora nativas.</li>
+            <li>No hacer fuego fuera de los lugares habilitados.</li>
+            <li>Avisar el recorrido antes de salir y respetar los senderos.</li>
+          </ul>
+
+          <div class="marco-legal">
+            <h3>Marco provincial</h3>
+            <p>Las áreas naturales de Córdoba se organizan por la Ley provincial 6964,
+            que define las categorías de protección y promueve las actividades de
+            educación y recreación compatibles con la conservación.</p>
+            <p class="marco-legal__pie">Actividades como las del club encajan de lleno
+            en lo que esa ley promueve.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         7. PRÓXIMAS SALIDAS
+         ================================================================ -->
+    <section class="seccion" id="salidas">
+      <div class="marco">
+        <div class="seccion__cabeza">
+          <p class="kicker">Próximas salidas</p>
+          <h2>Qué viene este mes</h2>
+        </div>
+
+        <!-- ================================================================
+             CÓMO AGREGAR UNA SALIDA
+             Copiar un bloque <li class="salida"> completo y cambiar los datos.
+             Para vaciar el calendario, borrar los <li> y descomentar el
+             bloque .calendario-vacio de más abajo.
+             TODO: cargar las salidas reales confirmadas por el club.
+             ================================================================ -->
+        <ul class="calendario">
+          <li class="salida">
+            <div class="salida__fecha"><b>—</b><span>a definir</span></div>
+            <div class="salida__cuerpo">
+              <h3>Cargar aquí la próxima salida</h3>
+              <p class="salida__meta">Disciplina · Nivel de exigencia · Punto de encuentro</p>
+              <p>Descripción breve del recorrido, qué incluye y qué no.</p>
+            </div>
+            <a class="boton boton--acento"
+               href="https://wa.me/549XXXXXXXXXX?text=Hola,%20quiero%20anotarme%20a%20una%20salida">Anotarme</a>
+          </li>
+        </ul>
+
+        <!--
+        <div class="calendario-vacio">
+          <p>Estamos armando el calendario de la temporada.</p>
+          <a class="boton boton--acento" href="https://wa.me/549XXXXXXXXXX?text=Hola,%20quiero%20que%20me%20avisen%20de%20las%20próximas%20salidas">Avisame de las próximas</a>
+        </div>
+        -->
+      </div>
+    </section>
+
+    <!-- ================================================================
+         8. CÓMO ASOCIARSE
+         ================================================================ -->
+    <section class="seccion seccion--alt" id="asociarse">
+      <div class="marco">
+        <div class="seccion__cabeza">
+          <p class="kicker">Cómo asociarse</p>
+          <h2>Sumarte al club es simple</h2>
+          <p class="seccion__bajada">El club recibe adultos, y también chicos y chicas a través
+          de la escuela. Si nunca hiciste montaña, ese es justamente el punto de partida.</p>
+        </div>
+
+        <ol class="pasos">
+          <li><span class="pasos__num">1</span><p>Escribinos por WhatsApp o acercate a la sede.</p></li>
+          <li><span class="pasos__num">2</span><p>Completás una solicitud simple con tus datos.</p></li>
+          <li><span class="pasos__num">3</span><p>Te confirmamos la incorporación.</p></li>
+          <li><span class="pasos__num">4</span><p>Abonás la cuota.</p></li>
+          <li><span class="pasos__num">5</span><p>Ya podés usar la palestra, anotarte a las salidas y reservar los refugios.</p></li>
+        </ol>
+
+        <!-- TODO: el club tiene que confirmar el monto de la cuota, la periodicidad,
+             los medios de pago, la edad mínima y la lista real de beneficios. -->
+        <div class="beneficios">
+          <h3>Qué incluye ser socio</h3>
+          <ul>
+            <li>Uso de la palestra del club</li>
+            <li>Acceso a los dos refugios de Los Gigantes</li>
+            <li>Participación en las salidas</li>
+            <li>Descuentos en cursos y escuelas</li>
+          </ul>
+          <p class="beneficios__nota">Lista a confirmar por el club antes de publicar.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         9. GALERÍA
+         ================================================================ -->
+    <section class="seccion" id="galeria">
+      <div class="marco">
+        <div class="seccion__cabeza">
+          <p class="kicker">Galería</p>
+          <h2>El club en la montaña</h2>
+        </div>
+
+        <!-- ================================================================
+             TODO: FOTOS REALES
+             Reemplazar cada <div class="hueco"> por:
+               <img src="assets/nombre.jpg" alt="descripción" loading="lazy">
+             Se necesitan de 9 a 15 fotos propias, con permiso de uso de las
+             personas que aparecen. Atención con las fotos de menores de la
+             escuela: hace falta autorización de madres, padres o tutores.
+             No se dejan rutas a archivos inexistentes para no romper la página.
+             ================================================================ -->
+        <div class="galeria">
+          <div class="hueco"><span>Foto 1 · Cumbre</span></div>
+          <div class="hueco"><span>Foto 2 · Palestra</span></div>
+          <div class="hueco"><span>Foto 3 · Refugio</span></div>
+          <div class="hueco"><span>Foto 4 · Escuela</span></div>
+          <div class="hueco"><span>Foto 5 · Los Gigantes</span></div>
+          <div class="hueco"><span>Foto 6 · Salida en bici</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         10. PREGUNTAS FRECUENTES
+         ================================================================ -->
+    <section class="seccion seccion--alt" id="faq">
+      <div class="marco">
+        <div class="seccion__cabeza">
+          <p class="kicker">Preguntas frecuentes</p>
+          <h2>Lo que más nos consultan</h2>
+        </div>
+
+        <!-- TODO: las respuestas las tiene que redactar el club.
+             Las de abajo son borradores para completar. -->
+        <div class="faq">
+          <details>
+            <summary>¿Hay que tener experiencia para sumarse?</summary>
+            <p>No. Buena parte de las actividades están pensadas justamente para
+            quien arranca de cero.</p>
+          </details>
+          <details>
+            <summary>¿Puedo ir a una salida sin ser socio?</summary>
+            <p>A confirmar por el club.</p>
+          </details>
+          <details>
+            <summary>¿Desde qué edad pueden participar los chicos?</summary>
+            <p>A confirmar por el club.</p>
+          </details>
+          <details>
+            <summary>¿Qué equipo necesito? ¿El club presta material?</summary>
+            <p>A confirmar por el club.</p>
+          </details>
+          <details>
+            <summary>¿Cómo reservo un refugio y cuánto cuesta?</summary>
+            <p>La reserva se coordina por WhatsApp. La tarifa está a confirmar por el club.</p>
+          </details>
+          <details>
+            <summary>¿Cuánto sale la cuota y qué incluye?</summary>
+            <p>A confirmar por el club.</p>
+          </details>
+          <details>
+            <summary>¿Las actividades tienen seguro?</summary>
+            <p>A confirmar por el club.</p>
+          </details>
+          <details>
+            <summary>¿Dónde queda la sede y en qué horarios abre?</summary>
+            <p>A confirmar por el club.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         11. CTA FINAL
+         ================================================================ -->
+    <section class="cierre">
+      <svg class="cierre__patron" aria-hidden="true" focusable="false">
+        <use href="#patron-montanas"/>
+      </svg>
+      <div class="cierre__velo" aria-hidden="true"></div>
+      <div class="marco cierre__inner">
+        <h2>Te esperamos en la montaña</h2>
+        <p>Escribinos y te contamos cómo sumarte a la próxima salida.</p>
+        <a class="boton boton--acento boton--grande"
+           href="https://wa.me/549XXXXXXXXXX?text=Hola,%20quiero%20sumarme%20al%20Club%20Andino">
+          Escribinos por WhatsApp
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================================================================
+       12. FOOTER
+       ================================================================ -->
+  <footer class="pie" id="contacto">
+    <svg class="pie__patron" aria-hidden="true" focusable="false">
+      <use href="#patron-montanas"/>
+    </svg>
+    <div class="pie__velo" aria-hidden="true"></div>
+
+    <div class="marco pie__inner">
+      <div class="pie__grilla">
+        <div>
+          <span class="marca marca--pie">
+            <svg class="marca__iso" viewBox="0 0 40 36" aria-hidden="true">
+              <path d="M20 2 L38 34 H2 Z" fill="#E5D8BE"/>
+              <path d="M20 12 L30 30 H10 Z" fill="#0B3B8C"/>
+              <circle cx="20" cy="10" r="4" fill="#E0B400"/>
+            </svg>
+            <span class="marca__texto">Club Andino <b>VCP</b></span>
+          </span>
+          <p>Club de montaña de Villa Carlos Paz, Córdoba. Desde 1985.</p>
+          <div class="redes">
+            <a href="https://www.instagram.com/clubandino_vcp/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.facebook.com/ClubAndinoVillaCarlosPaz/" target="_blank" rel="noopener">Facebook</a>
+          </div>
+        </div>
+
+        <div>
+          <h3>Secciones</h3>
+          <a href="#actividades">Actividades</a>
+          <a href="#refugios">Refugios</a>
+          <a href="#escuelas">Escuelas</a>
+          <a href="#montana">La montaña</a>
+          <a href="#asociarse">Asociarse</a>
+        </div>
+
+        <div>
+          <h3>Contacto</h3>
+          <!-- TODO: confirmar dirección exacta de la sede. La prensa local da dos
+               versiones distintas (Llerena 2724 y Llerena 2427). Falta también
+               horario de atención, email institucional y WhatsApp oficial. -->
+          <p class="pie__pendiente">Dirección de la sede: a confirmar</p>
+          <p class="pie__pendiente">Horario de atención: a confirmar</p>
+          <a href="https://wa.me/549XXXXXXXXXX">WhatsApp del club</a>
+          <a href="mailto:contacto@clubandinovcp.org.ar">Email de contacto</a>
+        </div>
+      </div>
+
+      <div class="pie__base">
+        <span>© <span id="anio"></span> Club Andino Villa Carlos Paz</span>
+        <span>Sitio desarrollado por PlexiWeb</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a class="wa-flotante"
+     href="https://wa.me/549XXXXXXXXXX?text=Hola,%20quiero%20consultar%20por%20el%20club"
+     target="_blank" rel="noopener" aria-label="Escribir al club por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.29-.15-1.71-.85-1.98-.94-.27-.1-.46-.15-.66.15-.2.29-.76.94-.93 1.13-.17.2-.34.22-.63.07-.29-.15-1.23-.46-2.35-1.47-.87-.78-1.46-1.74-1.63-2.03-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.51-.07-.15-.66-1.62-.91-2.22-.24-.58-.48-.5-.66-.51-.17-.01-.37-.01-.56-.01-.2 0-.51.07-.78.37-.27.29-1.02 1-1.02 2.44s1.05 2.83 1.2 3.03c.15.2 2.06 3.24 5.05 4.44.7.3 1.25.48 1.68.62.7.22 1.34.19 1.84.11.56-.08 1.71-.7 1.96-1.37.24-.68.24-1.26.17-1.37-.07-.12-.26-.19-.55-.34z"/><path d="M12.01 2C6.49 2 2 6.48 2 11.99c0 1.99.58 3.85 1.58 5.42L2 22l4.72-1.53a10 10 0 0 0 5.29 1.5h.01c5.52 0 10-4.48 10-9.98C22 6.48 17.53 2 12.01 2zm0 18.06h-.01a8.05 8.05 0 0 1-4.42-1.31l-.32-.19-3.13 1.02 1.04-3.06-.21-.32a8.02 8.02 0 0 1-1.28-4.21c0-4.45 3.63-8.07 8.09-8.07 2.16 0 4.19.84 5.72 2.37a8 8 0 0 1 2.37 5.71c0 4.45-3.63 8.06-8.85 8.06z"/></svg>
+  </a>
+
+  <script src="index.js"></script>
+</body>
+</html>
