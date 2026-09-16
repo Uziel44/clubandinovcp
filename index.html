@@ -12,7 +12,11 @@
   <meta property="og:description" content="Club de montaña desde 1985. Trekking, escalada y dos refugios propios en Los Gigantes.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://clubandinovcp.org.ar/">
+  <meta property="og:image" content="09.png">
   <!-- TODO: subir una imagen de portada de 1200x630 y enlazarla acá -->
+
+  <link rel="icon" type="image/png" href="09.png">
+  <link rel="apple-touch-icon" href="09.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,12 +35,7 @@
     <div class="marco cabecera__fila">
 
       <a href="#inicio" class="marca">
-        <!-- Isotipo simplificado. TODO: reemplazar por el logo oficial en SVG. -->
-        <svg class="marca__iso" viewBox="0 0 40 36" aria-hidden="true">
-          <path d="M20 2 L38 34 H2 Z" fill="#0B3B8C"/>
-          <path d="M20 12 L30 30 H10 Z" fill="#E5D8BE"/>
-          <circle cx="20" cy="10" r="4" fill="#E0B400"/>
-        </svg>
+        <img class="marca__iso" src="09.png" alt="" aria-hidden="true">
         <span class="marca__texto">Club Andino <b>VCP</b></span>
       </a>
 
@@ -45,10 +44,17 @@
         <a href="#refugios">Refugios</a>
         <a href="#escuelas">Escuelas</a>
         <a href="#montana">La montaña</a>
+        <a href="https://www.instagram.com/clubandino_vcp/" target="_blank" rel="noopener" class="nav-escritorio__red" aria-label="Instagram del club">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c-2.72 0-3.06.01-4.12.06-1.06.05-1.79.22-2.43.47-.66.26-1.22.6-1.77 1.16-.56.55-.9 1.11-1.16 1.77-.25.64-.42 1.37-.47 2.43C2.01 8.94 2 9.28 2 12s.01 3.06.06 4.12c.05 1.06.22 1.79.47 2.43.26.66.6 1.22 1.16 1.77.55.56 1.11.9 1.77 1.16.64.25 1.37.42 2.43.47C8.94 21.99 9.28 22 12 22s3.06-.01 4.12-.06c1.06-.05 1.79-.22 2.43-.47.66-.26 1.22-.6 1.77-1.16.56-.55.9-1.11 1.16-1.77.25-.64.42-1.37.47-2.43.05-1.06.06-1.4.06-4.12s-.01-3.06-.06-4.12c-.05-1.06-.22-1.79-.47-2.43-.26-.66-.6-1.22-1.16-1.77-.55-.56-1.11-.9-1.77-1.16-.64-.25-1.37-.42-2.43-.47C15.06 2.01 14.72 2 12 2zm0 1.8c2.67 0 2.99.01 4.04.06.98.04 1.5.21 1.86.34.47.18.8.4 1.15.75.35.35.57.68.75 1.15.13.36.29.88.34 1.86.05 1.05.06 1.37.06 4.04s-.01 2.99-.06 4.04c-.04.98-.21 1.5-.34 1.86-.18.47-.4.8-.75 1.15-.35.35-.68.57-1.15.75-.36.13-.88.29-1.86.34-1.05.05-1.37.06-4.04.06s-2.99-.01-4.04-.06c-.98-.04-1.5-.21-1.86-.34-.47-.18-.8-.4-1.15-.75-.35-.35-.57-.68-.75-1.15-.13-.36-.29-.88-.34-1.86C3.81 14.99 3.8 14.67 3.8 12s.01-2.99.06-4.04c.04-.98.21-1.5.34-1.86.18-.47.4-.8.75-1.15.35-.35.68-.57 1.15-.75.36-.13.88-.29 1.86-.34C9.01 3.81 9.33 3.8 12 3.8zm0 3.06A5.14 5.14 0 1 0 12 17.06 5.14 5.14 0 0 0 12 6.86zm0 8.48a3.34 3.34 0 1 1 0-6.68 3.34 3.34 0 0 1 0 6.68zm5.34-8.68a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/ClubAndinoVillaCarlosPaz" target="_blank" rel="noopener" class="nav-escritorio__red" aria-label="Facebook del club">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8.5h2.85l.43-3.31H13.5V8.05c0-.96.27-1.61 1.64-1.61h1.75V3.48C16.57 3.44 15.54 3.35 14.34 3.35c-2.51 0-4.23 1.53-4.23 4.34v2.5H7.25v3.31h2.86V22h3.39z"/></svg>
+        </a>
       </nav>
 
       <a class="boton boton--acento boton--cabecera"
-         href="#asociarse">Asociate</a>
+         href="https://wa.me/5493515523643?text=Hola,%20quiero%20asociarme%20al%20Club%20Andino"
+         target="_blank" rel="noopener">Asociate</a>
 
       <button class="hamburguesa" id="btn-menu" aria-label="Abrir menú"
               aria-expanded="false" aria-controls="menu-movil">
@@ -65,7 +71,13 @@
         <a href="#montana">La montaña</a>
         <a href="#salidas">Próximas salidas</a>
         <a href="#faq">Preguntas</a>
-        <a class="boton boton--acento boton--bloque" href="#asociarse">Asociate</a>
+        <div class="menu-movil__redes">
+          <a href="https://www.instagram.com/clubandino_vcp/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/ClubAndinoVillaCarlosPaz" target="_blank" rel="noopener">Facebook</a>
+        </div>
+        <a class="boton boton--acento boton--bloque"
+           href="https://wa.me/5493515523643?text=Hola,%20quiero%20asociarme%20al%20Club%20Andino"
+           target="_blank" rel="noopener">Asociate</a>
       </div>
     </nav>
   </header>
@@ -76,19 +88,19 @@
          1. HERO
          ================================================================ -->
     <section class="hero">
-      <img class="hero__patron" src="patron-club-andino.png" alt="" aria-hidden="true">
+      <img class="hero__patron" src="06.jpeg" alt="" aria-hidden="true">
       <div class="hero__velo" aria-hidden="true"></div>
 
       <div class="marco hero__inner">
         <p class="kicker kicker--claro">Villa Carlos Paz · Córdoba · desde 1985</p>
-        <h1>La montaña se aprende en comunidad</h1>
+        <h1>41 Años de historias en la montaña</h1>
         <p class="hero__bajada">
-          Somos un club de montaña con cuarenta años en Villa Carlos Paz.
-          Trekking, escalada, montañismo y bicicleta, con dos refugios propios
-          en el macizo de Los Gigantes.
+          Somos un club social y deportivo que promueve los deportes de montaña como la Escalada clásica, deportiva, y el montañismo en todas sus expresiones.
         </p>
         <div class="hero__acciones">
-          <a class="boton boton--acento boton--grande" href="#asociarse">Quiero asociarme</a>
+          <a class="boton boton--acento boton--grande"
+             href="https://wa.me/5493515523643?text=Hola,%20quiero%20asociarme%20al%20Club%20Andino"
+             target="_blank" rel="noopener">Quiero asociarme</a>
           <a class="boton boton--claro boton--grande" href="#refugios">Conocer los refugios</a>
         </div>
 
@@ -384,12 +396,14 @@
     </section>
 
     <!-- ================================================================
-         8. CÓMO ASOCIARSE
+         8. CÓMO ASOCIARSE  
          ================================================================ -->
-    <section class="seccion seccion--alt" id="asociarse">
-      <div class="marco">
+    <section class="seccion seccion--asociarse" id="asociarse">
+      <img class="seccion--asociarse__patron" src="01.jpg" alt="" aria-hidden="true" loading="lazy">
+      <div class="seccion--asociarse__velo" aria-hidden="true"></div>
+      <div class="marco seccion--asociarse__inner">
         <div class="seccion__cabeza">
-          <p class="kicker">Cómo asociarse</p>
+          <p class="kicker kicker--claro">Cómo asociarse</p>
           <h2>Sumarte al club es simple</h2>
           <p class="seccion__bajada">El club recibe adultos, y también chicos y chicas a través
           de la escuela. Si nunca hiciste montaña, ese es justamente el punto de partida.</p>
@@ -421,30 +435,20 @@
     <!-- ================================================================
          9. GALERÍA
          ================================================================ -->
-    <section class="seccion" id="galeria">
-      <div class="marco">
-        <div class="seccion__cabeza">
-          <p class="kicker">Galería</p>
-          <h2>El club en la montaña</h2>
-        </div>
+    <section class="pared-fotos" id="galeria">
+      <img class="pared-fotos__fondo" src="wall.jpg" alt="" aria-hidden="true">
 
-        <!-- ================================================================
-             TODO: FOTOS REALES
-             Reemplazar cada <div class="hueco"> por:
-               <img src="assets/nombre.jpg" alt="descripción" loading="lazy">
-             Se necesitan de 9 a 15 fotos propias, con permiso de uso de las
-             personas que aparecen. Atención con las fotos de menores de la
-             escuela: hace falta autorización de madres, padres o tutores.
-             No se dejan rutas a archivos inexistentes para no romper la página.
-             ================================================================ -->
-        <div class="galeria">
-          <div class="hueco"><span>Foto 1 · Cumbre</span></div>
-          <div class="hueco"><span>Foto 2 · Palestra</span></div>
-          <div class="hueco"><span>Foto 3 · Refugio</span></div>
-          <div class="hueco"><span>Foto 4 · Escuela</span></div>
-          <div class="hueco"><span>Foto 5 · Los Gigantes</span></div>
-          <div class="hueco"><span>Foto 6 · Salida en bici</span></div>
-        </div>
+      <div class="pared-fotos__grilla">
+        <figure class="cuadro cuadro--1"><img src="02.jpg" alt="Actividad del Club Andino VCP" loading="lazy"></figure>
+        <figure class="cuadro cuadro--2"><img src="03.jpg" alt="Actividad del Club Andino VCP" loading="lazy"></figure>
+        <figure class="cuadro cuadro--3"><img src="04.jpg" alt="Actividad del Club Andino VCP" loading="lazy"></figure>
+        <figure class="cuadro cuadro--4"><img src="05.jpg" alt="Actividad del Club Andino VCP" loading="lazy"></figure>
+        <figure class="cuadro cuadro--logo"><img src="16.jpeg" alt="Escudo Club Andino Villa Carlos Paz" loading="lazy"></figure>
+        <figure class="cuadro cuadro--5"><img src="06.jpeg" alt="Actividad del Club Andino VCP" loading="lazy"></figure>
+        <figure class="cuadro cuadro--6"><img src="07.jpeg" alt="Actividad del Club Andino VCP" loading="lazy"></figure>
+        <figure class="cuadro cuadro--7"><img src="13.jpg" alt="Actividad del Club Andino VCP" loading="lazy"></figure>
+        <figure class="cuadro cuadro--8"><img src="10.jpeg" alt="Actividad del Club Andino VCP" loading="lazy"></figure>
+        <figure class="cuadro cuadro--9"><img src="11.jpg" alt="Actividad del Club Andino VCP" loading="lazy"></figure>
       </div>
     </section>
 
@@ -508,7 +512,8 @@
         <h2>Te esperamos en la montaña</h2>
         <p>Escribinos y te contamos cómo sumarte a la próxima salida.</p>
         <a class="boton boton--acento boton--grande"
-           href="https://wa.me/549XXXXXXXXXX?text=Hola,%20quiero%20sumarme%20al%20Club%20Andino">
+           href="https://wa.me/5493515523643?text=Hola,%20quiero%20sumarme%20al%20Club%20Andino"
+           target="_blank" rel="noopener">
           Escribinos por WhatsApp
         </a>
       </div>
@@ -527,11 +532,7 @@
       <div class="pie__grilla">
         <div>
           <span class="marca marca--pie">
-            <svg class="marca__iso" viewBox="0 0 40 36" aria-hidden="true">
-              <path d="M20 2 L38 34 H2 Z" fill="#E5D8BE"/>
-              <path d="M20 12 L30 30 H10 Z" fill="#0B3B8C"/>
-              <circle cx="20" cy="10" r="4" fill="#E0B400"/>
-            </svg>
+            <img class="marca__iso" src="09.png" alt="" aria-hidden="true">
             <span class="marca__texto">Club Andino <b>VCP</b></span>
           </span>
           <p>Club de montaña de Villa Carlos Paz, Córdoba. Desde 1985.</p>
@@ -558,7 +559,7 @@
           <p class="pie__pendiente">Dirección de la sede: a confirmar</p>
           <p class="pie__pendiente">Horario de atención: a confirmar</p>
           <a href="https://wa.me/549XXXXXXXXXX">WhatsApp del club</a>
-          <a href="mailto:contacto@clubandinovcp.org.ar">Email de contacto</a>
+          <a href="mailto:clubandinovillacarlospaz@gmail.com">clubandinovillacarlospaz@gmail.com</a>
         </div>
       </div>
 
