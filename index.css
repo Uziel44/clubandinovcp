@@ -262,6 +262,23 @@ a{ color: inherit; }
 .seccion--oscura .seccion__bajada,
 .seccion--azul   .seccion__bajada{ color: #C3D8EC; }
 
+.seccion--actividades{ position: relative; overflow: hidden; background: var(--navy); }
+.seccion--actividades__patron{
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+  pointer-events: none;
+}
+.seccion--actividades__velo{
+  position: absolute; inset: 0;
+  background: rgba(14,29,56,.72);
+}
+.seccion--actividades__inner{ position: relative; }
+.seccion--actividades h2{ color: #fff; }
+.seccion--actividades .seccion__bajada{ color: #C3D8EC; }
+.seccion--actividades .nota-cierre{ color: #C3D8EC; }
+.seccion--actividades .nota-cierre a{ color: var(--amarillo); }
+
 .seccion--asociarse{ position: relative; overflow: hidden; background: var(--navy); }
 .seccion--asociarse__patron{
   position: absolute; inset: 0;
@@ -398,6 +415,21 @@ a{ color: inherit; }
 /* =========================================================
    La montaña que cuidamos
    ========================================================= */
+.seccion--montana{ position: relative; overflow: hidden; background: var(--azul-club); }
+.seccion--montana__patron{
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+  pointer-events: none;
+}
+.seccion--montana__velo{
+  position: absolute; inset: 0;
+  background: rgba(11,59,140,.78);
+}
+.seccion--montana__inner{ position: relative; }
+.seccion--montana h2, .seccion--montana h3{ color: #fff; }
+.seccion--montana .seccion__bajada{ color: #C3D8EC; }
+
 .practicas{ list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
 .practicas li{
   color: #DCE9F3; font-size: 1rem; padding-left: 26px; position: relative;
