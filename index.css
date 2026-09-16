@@ -350,6 +350,14 @@ a{ color: inherit; }
 .ficha dt{ font-size: .82rem; text-transform: uppercase; letter-spacing: .04em; color: var(--crema); }
 .ficha dd{ margin: 0; font-size: .95rem; color: #DCE9F3; }
 
+.refugio__ig{
+  display: inline-flex; align-items: center; gap: 8px;
+  margin-top: 20px; font-size: .92rem; font-weight: 600;
+  color: #fff; text-decoration: none;
+}
+.refugio__ig svg{ width: 18px; height: 18px; flex-shrink: 0; }
+.refugio__ig:hover{ color: var(--amarillo); }
+
 .reservas{
   margin-top: 34px; padding: 28px 26px;
   background: var(--azul-club); border-radius: var(--r-tarjeta);
