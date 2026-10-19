@@ -207,6 +207,7 @@ a{ color: inherit; }
   object-position: center;
   pointer-events: none;
 }
+.hero__patron{ opacity: .95; }
 .hero__velo{
   position: absolute; inset: 0;
   background: linear-gradient(180deg, rgba(14,29,56,.72) 0%, rgba(14,29,56,.86) 100%);
@@ -374,6 +375,7 @@ a{ color: inherit; }
 }
 .refugio__ig svg{ width: 18px; height: 18px; flex-shrink: 0; }
 .refugio__ig:hover{ color: var(--amarillo); }
+.refugio__links{ display: flex; flex-wrap: wrap; gap: 4px 24px; }
 
 .reservas{
   margin-top: 34px; padding: 28px 26px;
@@ -449,6 +451,35 @@ a{ color: inherit; }
 .marco-legal h3{ font-size: 1.05rem; margin-bottom: 12px; }
 .marco-legal p{ color: #C3D8EC; font-size: .95rem; margin-bottom: 12px; }
 .marco-legal__pie{ color: var(--crema); font-style: italic; }
+
+.notas-prensa{ display: grid; gap: 18px; margin-top: 28px; }
+@media (min-width: 900px){
+  .notas-prensa{ grid-template-columns: repeat(2, 1fr); gap: 22px; }
+  .notas-prensa .nota-prensa:last-child:nth-child(odd){ grid-column: 1 / -1; }
+}
+@media (min-width: 1200px){
+  .notas-prensa{ grid-template-columns: repeat(3, 1fr); }
+  .notas-prensa .nota-prensa:last-child:nth-child(odd){ grid-column: auto; }
+}
+.nota-prensa{
+  display: flex; flex-direction: column; padding: 28px 26px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.16);
+  border-left: 4px solid var(--amarillo);
+  border-radius: var(--r-tarjeta);
+  text-decoration: none; transition: background .2s ease;
+}
+.nota-prensa:hover{ background: rgba(255,255,255,.14); }
+.nota-prensa__kicker{
+  font-size: .78rem; font-weight: 600; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--crema); margin-bottom: 8px;
+}
+.nota-prensa__titulo{
+  font-family: 'Archivo', sans-serif; font-weight: 700;
+  font-size: 1.15rem; color: #fff; margin-bottom: 10px;
+}
+.nota-prensa__texto{ color: #C3D8EC; font-size: .95rem; max-width: 68ch; margin-bottom: 14px; }
+.nota-prensa__cta{ color: var(--amarillo); font-weight: 600; font-size: .92rem; margin-top: auto; }
 
 /* =========================================================
    Calendario de salidas
